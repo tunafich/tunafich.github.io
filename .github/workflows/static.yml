@@ -34,11 +34,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
       - name: Install dependencies
-        uses: npm install
+        run: npm install
       - name: Build app
-        uses: npm run build
+        run: npm run build
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        run: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
